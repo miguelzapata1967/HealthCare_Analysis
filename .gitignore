@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Power BI temporary files
+*.tmp
+~$*.pbix
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# OneDrive / Office temporary files
+~$*.docx
+~$*.xlsx
