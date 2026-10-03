@@ -8,41 +8,41 @@ This document records the analytical findings and supporting visual evidence fro
 
 Hospital-level survey participation was evaluated using completed surveys and survey response rate. Response rates vary among the hospitals represented in the dataset.
 
-![Hospital Performance](images/analysis_result_09.png)
+![Hospital Performance](Graphics/HealthCare_Analysis_09.png)
 
 ### Validation of the Response-Rate Measure
 
 The hospital-level `Survey Response Rate` measure uses `MAX(FACT_PATIENT_SURVEY[SURVEY_RESPONSE_RATE_PERCENT])`. In an individual hospital row, the filter context returns that hospital's value. In the table total context, however, the same measure returned the maximum value across the broader context rather than an overall response rate. For this reason, the misleading total row was removed and the dashboard retains a separate overall average-response-rate KPI.
 
-![Hospital Performance Measure Validation](images/analysis_result_10.png)
+![Hospital Performance Measure Validation](Graphics/HealthCare_Analysis_10.png)
 
 ## Top Hospitals by Survey Response Rate
 
 The analysis identifies hospitals with the highest survey response rates within the provided dataset. These results describe the project data only and should not be interpreted as a comprehensive national ranking of U.S. hospitals.
 
-![Top 10 Hospitals](images/analysis_result_11.png)
+![Top 10 Hospitals](Graphics/HealthCare_Analysis_11.png)
 
 ## Hospitals by City
 
 The geographic analysis shows that some cities represented in the dataset contain multiple hospitals. This finding describes the hospital records supplied for the project and does not establish complete hospital coverage for those cities.
 
-![Hospitals by City](images/analysis_result_12.png)
+![Hospitals by City](Graphics/HealthCare_Analysis_12.png)
 
 ## Hospital Survey Response by Location
 
 The final geographic visualization maps hospital/location records and presents Survey Response Rate and Completed Surveys as supporting information.
 
-![Hospital Survey Response Rate by Location](images/analysis_result_16.png)
+![Hospital Survey Response Rate by Location](Graphics/HealthCare_Analysis_16.png)
 
 ## Patient Survey Star Rating — Data Quality Finding
 
 The investigation of `PATIENT_SURVEY_STAR_RATING` showed that the source field contains discrete star values and blanks. Multiple survey and measure records can occur within the same hospital/location context, and different records can contain different star ratings.
 
-![Patient Survey Star Rating Source Values](images/analysis_result_05.png)
+![Patient Survey Star Rating Source Values](Graphics/HealthCare_Analysis_05.png)
 
-![Patient Survey Star Rating Record Investigation](images/analysis_result_06.png)
+![Patient Survey Star Rating Record Investigation](Graphics/HealthCare_Analysis_06.png)
 
-![Patient Survey Star Rating Context Validation](images/analysis_result_07.png)
+![Patient Survey Star Rating Context Validation](Graphics/HealthCare_Analysis_07.png)
 
 Averaging those records by hospital/location can therefore create a fractional derived value that is not itself a source-reported star value. The star-rating evidence is retained as a finding, but it is not used as a definitive overall hospital rating or comprehensive national hospital ranking.
 
@@ -50,21 +50,21 @@ Averaging those records by hospital/location can therefore create a fractional d
 
 The following screenshots preserve the intermediate result checks used to validate the analytical workflow.
 
-![Analysis Evidence 1](images/analysis_result_01.png)
+![Analysis Evidence 1](Graphics/HealthCare_Analysis_01.png)
 
-![Analysis Evidence 2](images/analysis_result_02.png)
+![Analysis Evidence 2](Graphics/HealthCare_Analysis_02.png)
 
-![Analysis Evidence 3](images/analysis_result_03.png)
+![Analysis Evidence 3](Graphics/HealthCare_Analysis_03.png)
 
-![Analysis Evidence 4](images/analysis_result_04.png)
+![Analysis Evidence 4](Graphics/HealthCare_Analysis_04.png)
 
-![Analysis Evidence 8](images/analysis_result_08.png)
+![Analysis Evidence 8](Graphics/HealthCare_Analysis_08.png)
 
-![Analysis Evidence 13](images/analysis_result_13.png)
+![Analysis Evidence 13](Graphics/HealthCare_Analysis_13.png)
 
-![Analysis Evidence 14](images/analysis_result_14.png)
+![Analysis Evidence 14](Graphics/HealthCare_Analysis_14.png)
 
-![Analysis Evidence 15](images/analysis_result_15.png)
+![Analysis Evidence 15](Graphics/HealthCare_Analysis_15.png)
 
 ## Data Limitations
 
